@@ -212,7 +212,7 @@ class _DropdownMenuItemButtonState<T>
           color:
               _isSelectedItem ? widget.route.selectedItemHighlightColor : null,
           child: Row(children: [Expanded(child: child), _isSelectedItem ? Icon(Icons.check, color: Colors.green) : SizedBox()],
-        ),
+        ),),
       );
     }
     child = FadeTransition(opacity: opacity, child: child);
