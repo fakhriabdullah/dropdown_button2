@@ -211,7 +211,7 @@ class _DropdownMenuItemButtonState<T>
         child: Container(
           color:
               _isSelectedItem ? widget.route.selectedItemHighlightColor : null,
-          child: child,
+          child: Row(children: [Expanded(child: child), _isSelectedItem ? Icon(Icons.check, color: Colors.green) : SizedBox()],
         ),
       );
     }
